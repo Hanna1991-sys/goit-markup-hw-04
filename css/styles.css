@@ -65,7 +65,7 @@ img {
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #e7e9fc
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -86,8 +86,9 @@ img {
     line-height: 1.17;
     text-transform: uppercase;
     letter-spacing: 0.03em;
-    color: var(--color-logo-blue);
+    color: var(--color-nav);
     margin-right: 76px;
+    position: relative;
 }
 
 .logo-black {
@@ -377,7 +378,6 @@ img {
 }
 .footer-flex{
     display: flex;
-    flex-direction: row;
     align-items: baseline;
     margin-right: 120px;
 }
@@ -403,8 +403,7 @@ img {
     gap: 16px;
 }
 .social-media {
-    width: 40px;
-    height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media-footer {
     width: 100%;
