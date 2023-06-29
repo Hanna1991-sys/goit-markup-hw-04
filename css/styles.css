@@ -140,14 +140,21 @@ img {
 .contact{
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-nav::after {
+.active {
+    position: relative;
+    color: #404BBF;
+}
+
+.active::after {
     content: "";
     position: absolute;
+    display: block;
+    width: 100%;
     left: 0;
-    bottom: -1px;
     height: 4px;
-    background-color: #404bbf;
     border-radius: 2px;
+    background: #404BBF;
+    bottom: -1px;
 }
 /**
   |============================
@@ -514,7 +521,7 @@ img {
         0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    transform: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .modal-button {
@@ -531,7 +538,8 @@ img {
     padding: 0;
     cursor: pointer;
     background-color: #e7e9fc;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button:hover{
