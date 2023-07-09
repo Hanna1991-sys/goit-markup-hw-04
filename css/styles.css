@@ -565,6 +565,9 @@ img {
 .modal-button:focus {
     fill: var(--primary-color);
 }
+.modal-form{
+    margin-bottom: 8px;
+}
 .modal-caption {
     display: block;
     width: 360px;
@@ -572,8 +575,10 @@ img {
     color: var(--primary-header);
     text-align: center;
     font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.32px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02px;
+    margin-bottom: 16px;
 }
 .modal-form {
 
