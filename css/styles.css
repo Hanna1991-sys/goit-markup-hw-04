@@ -588,6 +588,12 @@ img {
     position: relative;
     display: block;
     margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--logo-client);
+    margin-bottom: 4px;
+
 
 }
 
@@ -613,7 +619,11 @@ img {
     outline: transparent;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+    padding-left: 38px;
+    border-color: #4D5AE5;
+
 }
 .modal-form-input:hover{
     border: 1px solid var(--color-logo-blue);
@@ -622,7 +632,9 @@ img {
     position: absolute;
     bottom: 11px;
     left: 16px;
+    top: 50%;
     fill: var(--primary-header);
+    transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-input:hover +.modal-icon-input{
