@@ -642,6 +642,56 @@ img {
 .modal-form-comment::placeholder {
     color: currentColor;
 }
+.modal-form-agreement {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 8px;
+
+}
+
+.modal-form-checkbox {
+   
+}
+
+.modal-form-costom-checkbox {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+
+    width: 16px;
+    height: 16px;
+    
+    border-radius: 2px;
+    border: 1px solid var(--color-placeholder);
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+    }
+
+.modal-form-checkbox-icon {
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.modal-form-checkbox:checked + .modal-form-costom-checkbox {
+    border-color: var(--color-nav);
+    background-color: var(--color-nav);
+
+}
+.modal-form-checkbox:checked+.modal-form-costom-checkbox 
+> .modal-form-checkbox-icon {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+
+}
+
+.modal-form-agreement-desc {}
+
+.modal-form-link {}
 /**
   |============================
   | Portfolio
