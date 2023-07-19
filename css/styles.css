@@ -565,10 +565,6 @@ img {
 .modal-button:focus {
     fill: var(--primary-color);
 }
-.modal-div{
-    margin-bottom: 8px;
-    position: relative;
-}
 .modal-caption {
     display: block;
     width: 360px;
@@ -584,6 +580,9 @@ img {
 .modal-form {
 
 }
+.modal-form-div {
+    margin-bottom: 8px;
+}
 
 .modal-form-field {
     position: relative;
@@ -598,6 +597,9 @@ img {
 
 }
 
+.modal-div {
+    position: relative;
+}
 .modal-form-label {
     display: block; 
     margin-bottom: 4px;
