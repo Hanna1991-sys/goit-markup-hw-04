@@ -688,20 +688,19 @@ img {
 .modal-form-costom-checkbox {
     display: inline-flex;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
 
     fill: transparent;
-    
-    width: 16px;
+
     height: 16px;
+    width: 16px;
     
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     border: 1px solid var(--color-placeholder);
-
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
-                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .modal-form-checkbox-icon {
@@ -712,10 +711,11 @@ img {
 
 
 .modal-form-checkbox:checked + .modal-form-costom-checkbox {
-    border-color: var(--color-nav);
     background-color: var(--color-nav);
-
+    border: none;
+    fill:  #F4F4FD;
 }
+
 .modal-form-checkbox:checked+.modal-form-costom-checkbox 
 > .modal-form-checkbox-icon {
     opacity: 1;
@@ -725,7 +725,9 @@ img {
 
 .modal-form-agreement-desc {}
 
-.modal-form-link {}
+.modal-form-link {
+    color: var(--color-logo-blue);
+}
 /**
   |============================
   | Portfolio
