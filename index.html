@@ -476,8 +476,8 @@
               <span class="modal-form-label">Comment</span>
             </label>
             <textarea
-              id="user-comment"
               class="modal-form-comment"
+              id="user-comment"
               name="user-comment"
               cols="6"
               placeholder="Text input"
@@ -485,18 +485,27 @@
             </textarea>
           </div>
 
-          <label class="modal-form-agreement">
-            <input class="modal-form-checkbox" type="checkbox" />
-            <span class="modal-form-costom-checkbox">
-              <svg class="modal-form-checkbox-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-click"></use>
-              </svg>
-            </span>
-            <span class="modal-form-agreement-desc"
-              >I accept the terms and conditions of the
-              <a class="modal-form-link" href="#">Privacy Policy</a>
-            </span>
-          </label>
+          <div class="modal-form-div-checkbox visually-hidden">
+            <input
+              class="modal-form-checkbox"
+              type="checkbox"
+              id="user-privacy"
+              value="true"
+              name="user-privacy"
+            />
+
+            <label class="modal-form-agreement" for="user-privacy">
+              <span class="modal-form-costom-checkbox">
+                <svg class="modal-form-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-click"></use>
+                </svg>
+              </span>
+              <span class="modal-form-agreement-desc"
+                >I accept the terms and conditions of the
+                <a class="modal-form-link" href="#">Privacy Policy</a>
+              </span>
+            </label>
+          </div>
           <button class="hero-button" type="submit">Send</button>
         </form>
       </div>
