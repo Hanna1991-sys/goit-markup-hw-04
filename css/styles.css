@@ -567,6 +567,7 @@ img {
 }
 .modal-div{
     margin-bottom: 8px;
+    position: relative;
 }
 .modal-caption {
     display: block;
