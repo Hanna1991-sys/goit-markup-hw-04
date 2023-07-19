@@ -628,6 +628,9 @@ img {
     border-color: #4D5AE5;
 
 }
+.modal-form-div-comment {
+    margin-bottom: 16px;
+} 
 .modal-form-input:hover{
     border: 1px solid var(--color-logo-blue);
 }
