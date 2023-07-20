@@ -698,7 +698,7 @@ img {
     }
 
 
-.modal-form-checkbox:checked .modal-form-agreement .modal-form-costom-checkbox {
+.modal-form-checkbox:checked +.modal-form-agreement .modal-form-costom-checkbox {
     background-color: var(--color-nav);
     border: none;
     fill: #F4F4FD;
