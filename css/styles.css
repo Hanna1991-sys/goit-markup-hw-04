@@ -616,16 +616,11 @@ img {
     width: 100%;
     height: 40px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-    padding: 11px 38px;
-
-    font-size: 18px;
-
-    outline: transparent;
     border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: transparent;
+    outline: transparent;
     padding-left: 38px;
-    border-color: #4D5AE5;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .modal-form-div-comment {
@@ -646,6 +641,9 @@ img {
 .modal-form-input:hover +.modal-icon-input{
     fill: var(--color-logo-blue);
 }
+.modal-form-input:focus +.modal-icon-input {
+    fill: var(--color-logo-blue);
+}
 .modal-form-comment {
     width: 100%;
     height: 120px;
@@ -663,6 +661,9 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-comment:hover {
+    border: 1px solid var(--color-logo-blue);
+}
+.modal-form-comment:focus {
     border: 1px solid var(--color-logo-blue);
 }
 .modal-form-comment::placeholder {
@@ -687,18 +688,16 @@ img {
 }
 
 .modal-form-costom-checkbox {
+    height: 16px;
+    width: 16px;
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
 
     fill: transparent;
-
-    height: 16px;
-    width: 16px;
-    
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    border: 1px solid var(--color-placeholder);
     
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
                 border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -706,8 +705,6 @@ img {
 
 .modal-form-checkbox-icon {
     opacity: 0;
-    transform: scale(0);
-    transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -720,7 +717,6 @@ img {
 .modal-form-checkbox:checked + .modal-form-costom-checkbox 
 > .modal-form-checkbox-icon {
     opacity: 1;
-    transform: scale(1) rotate(360deg);
 
 }
 
